@@ -1,0 +1,80 @@
+/* src/components/ContactForm.css */
+
+.contact-container {
+  background-color: #f0f4f8; /* Light gray background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 600px;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.contact-container:hover {
+  transform: translateY(-10px);
+}
+
+.contact-container h2 {
+  color: #333; /* Dark gray text */
+  margin-bottom: 20px;
+  font-size: 2rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  color: #555; /* Medium gray text */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+button {
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px);
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

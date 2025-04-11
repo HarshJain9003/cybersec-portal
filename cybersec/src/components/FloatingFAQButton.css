@@ -1,0 +1,25 @@
+.floating-faq-button {
+  position: fixed;
+  bottom: 50px; /* Adjust as needed to move the button up */
+  left: 50px; /* Adjust as needed */
+  background-color: #208af4; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 15px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000; /* Ensure the button is above other elements */
+}
+
+.floating-faq-button:hover {
+  background-color: #0056b3; /* Button hover color */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.floating-faq-button:active {
+  background-color: #004085; /* Button active color */
+}

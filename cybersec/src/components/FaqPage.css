@@ -1,0 +1,198 @@
+/* FaqPage.css */
+
+.faq-page {
+  margin-top: 110px;
+  display: flex;
+  background-color: #aad4da; /* Light background color */
+  padding: 20px;
+  min-height: 100vh;
+  position: relative; /* For positioning the close button */
+}
+
+.close-faq-button {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  background: none; /* No background color */
+  border: none;
+  color: #141c24; /* Dark color for contrast */
+  font-size: 30px; /* Larger font size for the × character */
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.close-faq-button:hover {
+  color: #0ca4a4; /* Color change on hover for better visibility */
+}
+
+.faq-sidebar {
+  width: 250px;
+  background-color: #141c24; /* Dark background for contrast */
+  color: #aad4da; /* Light text color */
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.faq-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  color: #23b3b8; /* Primary color for list items */
+}
+
+.faq-sidebar li:hover {
+  background-color: #38e5e7; /* Hover color */
+  color: #141c24;
+}
+
+.faq-sidebar li.active {
+  background-color: #0ca4a4; /* Active state color */
+  color: #141c24; /* Dark text color for contrast */
+}
+
+.faq-content {
+  flex-grow: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.faq-item {
+  background-color: #f4f0f0; /* Neutral background for FAQ items */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  padding: 15px;
+  cursor: pointer;
+  margin: 0;
+  font-size: 1.2rem;
+  background-color: #23b3b8; /* Primary color */
+  color: #141c24; /* Dark text color for contrast */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-answer {
+  padding: 15px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  color: #3c5464; /* Main text color */
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.faq-item.open .faq-question {
+  background-color: #0ca4a4; /* Highlight color for open state */
+  color: #ffffff; /* Light text color */
+}
+
+
+
+
+
+
+
+
+
+
+/*.faq-page {
+  display: flex;
+  background-color: #aad4da; Light background color 
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.faq-sidebar {
+  width: 250px;
+  background-color: #141c24;  Dark background for contrast 
+  color: #aad4da;  Light text color 
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.faq-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  color: #23b3b8; Primary color for list items 
+}
+
+.faq-sidebar li:hover {
+  background-color: #38e5e7; Hover color 
+  color: #141c24 ;
+}
+
+.faq-sidebar li.active {
+  background-color: #0ca4a4; Active state color 
+  color: #141c24; Dark text color for contrast 
+}
+
+.faq-content {
+  flex-grow: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.faq-item {
+  background-color: #f4f0f0; Neutral background for FAQ items 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  padding: 15px;
+  cursor: pointer;
+  margin: 0;
+  font-size: 1.2rem;
+  background-color: #23b3b8; Primary color 
+  color: #141c24; Dark text color for contrast 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-answer {
+  padding: 15px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  color: #3c5464; Main text color 
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.faq-item.open .faq-question {
+  background-color: #0ca4a4; Highlight color for open state 
+  color: #ffffff; /* Light text color 
+}*/

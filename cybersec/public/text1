@@ -1,0 +1,59 @@
+{/*import React from 'react';
+import './FaqPage.css'; // Import your CSS file for FaqPage
+
+const FaqPage = () => {
+  return (
+    <div className="faq-page">
+      <h1>Frequently Asked Questions</h1>
+      <div className="faq-item">
+        <h2>Instagram Account Got Hacked!</h2>
+        <p>
+          On the login screen, tap Get help logging in.
+          Enter the username, email address, or phone number associated with your account, then click Send login link.
+          Note: If you don’t have access to the username, email address, or phone number associated with your account, visit this page and follow the on-screen instructions.
+          Complete the captcha to confirm that you are a real human, then click Next.
+          Click the login link in your email or a text message (SMS) and follow the on-screen instructions.
+        </p>
+      </div>
+      <div className="faq-item">
+        <h2>How to Protect My Social Media Accounts?</h2>
+        <p>
+          Enable two-factor authentication (2FA) on your accounts.
+          Use strong, unique passwords for each account.
+          Be cautious of phishing scams and suspicious messages.
+          Regularly review your account settings and activity logs.
+        </p>
+      </div>
+      <div className="faq-item">
+        <h2>How to Report Cyberbullying?</h2>
+        <p>
+          Collect evidence of the bullying (screenshots, messages, etc.).
+          Report the incident to the platform where the bullying occurred.
+          Reach out to a trusted adult or authority figure for support.
+          Contact local law enforcement if the bullying involves threats or illegal activities.
+        </p>
+      </div>
+      <div className="faq-item">
+        <h2>What Should I Do if My Email is Hacked?</h2>
+        <p>
+          Change your email password immediately.
+          Enable two-factor authentication (2FA) for added security.
+          Check your account settings for any unauthorized changes.
+          Notify your contacts about the potential breach.
+        </p>
+      </div>
+      <div className="faq-item">
+        <h2>How to Identify Phishing Emails?</h2>
+        <p>
+          Look for spelling and grammar mistakes.
+          Be cautious of unsolicited attachments and links.
+          Check the sender's email address for authenticity.
+          Avoid providing personal information in response to suspicious emails.
+        </p>
+      </div>
+      {/* Add more questions and answers as needed */
+  /*  </div>
+  );
+};
+
+export default FaqPage;}

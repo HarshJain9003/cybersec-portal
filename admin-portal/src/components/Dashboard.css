@@ -1,0 +1,47 @@
+.dashboard {
+    padding: 20px;
+    background-color: #f0f3f5;
+  }
+  
+  .paper {
+    padding: 20px;
+    text-align: center;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .paper:hover {
+    transform: translateY(-5px);
+  }
+  
+  .paper h6 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  button.MuiButton-containedPrimary {
+    margin-top: 20px;
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  button.MuiButton-containedPrimary:hover {
+    background-color: #2980b9;
+  }
+  
+  .pie-chart,
+  .line-chart {
+    margin: 0 auto;
+  }
+  
+  .pie-chart {
+    margin-top: 20px;
+  }
+  
+  .line-chart {
+    margin-top: 40px;
+  }

@@ -1,0 +1,61 @@
+.tracking-page {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  padding-top: 150px; /* Adjust this value based on your navbar height */
+  box-sizing: border-box; /* Ensures padding and border are included in the total width/height */
+}
+
+.tracking-form {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #fefefe;
+  text-align: center;
+}
+
+.tracking-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: calc(100% - 120px);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tracking-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tracking-form button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+}
+
+.complaint-details {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tracking-page {
+    padding-top: 150px; /* Adjust for smaller screens if needed */
+  }
+}

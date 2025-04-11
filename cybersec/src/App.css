@@ -1,0 +1,50 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1d1f22; /* Accent Color */
+  color: #020708; /* Light text for contrast */
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #020708; /* Light text for readability */
+}
+
+
+
+/* Keyframes for Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Adding smooth scroll for the entire page */
+html {
+  scroll-behavior: smooth;
+}

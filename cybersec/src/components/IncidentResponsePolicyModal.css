@@ -1,0 +1,58 @@
+.policy-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .policy-modal-content {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .policy-modal-content h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .policy-modal-content p,
+  .policy-modal-content ul,
+  .policy-modal-content ol {
+    text-align: justify;
+  }
+  
+  .policy-modal-content ul,
+  .policy-modal-content ol {
+    margin-left: 20px;
+  }
+  
+  .policy-modal-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0ca4a4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .policy-modal-content button:hover {
+    background-color: #098fbb;
+  }
+

@@ -1,0 +1,70 @@
+/* src/components/FaqPage.css */
+
+{/*.faq-page {
+  background-color: #f9f9f9; /* Light background color */
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Dark text color */
+}
+
+.faq-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #2c3e50; /* Dark blue for the heading */
+}
+
+.faq-item {
+  background-color: #fff; /* White background for each FAQ item */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  background-color: #ecf0f1; /* Light gray background on hover */
+}
+
+.faq-item h2 {
+  font-size: 1.75rem;
+  color: #2980b9; /* Bright blue for the question headings */
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #495057; /* Medium gray for the answers */
+  line-height: 1.6;
+}
+
+.faq-item h2:hover {
+  color: #3498db; /* Slightly brighter blue on hover */
+}
+
+/* Animation for page load */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.faq-item {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .faq-item {
+    width: calc(100% - 40px); /* Full width on small screens */
+  }
+}
+}

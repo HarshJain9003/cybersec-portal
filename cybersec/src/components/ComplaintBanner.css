@@ -1,0 +1,41 @@
+/* src/components/ComplaintBanner.css */
+.complaint-banner {
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+  }
+  
+  .complaint-banner img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .complaint-banner button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .complaint-banner button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .complaint-banner {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .complaint-banner img {
+      max-width: 100%;
+    }
+  }
+  

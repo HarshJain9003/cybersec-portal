@@ -1,0 +1,126 @@
+/* Hero Section */
+.hero-container {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  overflow: hidden; /* Ensure no overflow outside the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF; /* White text for contrast */
+  text-align: center;
+  z-index: 1; /* Ensure the hero container is on top */
+}
+
+.home-video {
+  position: fixed; /* Change to absolute positioning */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire container */
+  z-index: -1; /* Place the video behind the text */
+}
+
+.hero-text {
+  z-index: 1; /* Ensure text is on top of the video */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+  animation: slideIn 2s ease-out;
+  color: #FFFFFF; /* White text color */
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  animation: slideIn 2s ease-out 0.5s;
+  color: #cde7e7; /* Light grey for paragraph text */
+}
+
+/* Sections Container */
+.sections-container {
+  position: relative;
+  z-index: 2; /* Ensure it appears above the video */
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Articles, Videos, and Social Posts Styles */
+.article, .video, .social-post {
+  background-color: #c1c1c1; /* Light grey background */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+.section {
+  padding: 100px 100px;
+  background-color: #1d1f22; /* Background Color */
+  text-align: center;
+  transition: background-color 0.5s ease;
+  border-bottom: 1px solid #e0e0e0; /* Subtle border */
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 40px;
+  
+  z-index: 2; /* Ensure it appears above the video */
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e6eded; /* Primary Color for headings */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.section p {
+  font-size: 1rem;
+  color: #111313; /* Dark grey for section text */
+}
+
+/* Video Container for Embedded Videos */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .section p {
+    font-size: 0.875rem;
+  }
+}

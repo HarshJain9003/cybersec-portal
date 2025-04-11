@@ -1,0 +1,84 @@
+/* src/components/About.css */
+
+.about-container {
+  background-color: #f0f4f8; /* Light blue background */
+  color: #2c3e50; /* Dark blue text */
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #34495e; /* Slightly darker blue for the heading */
+}
+
+.about-container p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #7f8c8d; /* Light gray for the introductory text */
+}
+
+.about-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-section {
+  background-color: #ffffff; /* White background for each section */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(50% - 40px); /* Two columns layout with space between */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.about-section:hover {
+  transform: translateY(-5px);
+  background-color: #ecf0f1; /* Light gray background on hover */
+}
+
+.about-section h3 {
+  margin-top: 0;
+  font-size: 1.75rem;
+  color: #2980b9; /* Bright blue for the section headings */
+  transition: color 0.3s ease-in-out;
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: #495057; /* Medium gray for the section text */
+  line-height: 1.6;
+}
+
+.about-section h3:hover {
+  color: #3498db; /* Slightly brighter blue on hover */
+}
+
+/* Animation for page load */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-section {
+    width: calc(100% - 40px); /* Full width on small screens */
+  }
+}

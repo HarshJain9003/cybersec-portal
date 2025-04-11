@@ -1,0 +1,27 @@
+.info-container {
+    padding: 50px;
+    text-align: center;
+    margin-top: 100px; /* Adjust if needed */
+
+  }
+  
+  .info-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .info-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .info-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+  }
+  
+  .info-card h3 {
+    margin-bottom: 10px;
+  }
+  
