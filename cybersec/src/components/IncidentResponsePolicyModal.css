@@ -28,6 +28,7 @@
     margin-top: 0;
     font-size: 1.5rem;
     cursor: pointer;
+    color: black;
   }
   
   .policy-modal-content p,
@@ -51,7 +52,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
   }
-  
+
   .policy-modal-content button:hover {
     background-color: #098fbb;
   }

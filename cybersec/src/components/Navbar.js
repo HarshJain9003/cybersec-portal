@@ -1,8 +1,6 @@
 // Navbar.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -42,7 +40,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="logo-container" onClick={handleHomeClick}>
           <img
-            src={require("../Images/logo.png")}
+            src={require("../Images/favicon.png")}
             alt="Logo"
             className="logo"
           />
@@ -57,12 +55,6 @@ const Navbar = () => {
 
       <ul className={`nav-menu ${isOpen ? 'nav-menu-open' : ''}`}>
         <li className="nav-item">
-          <Link to="/" className="nav-links" onClick={handleHomeClick}>
-            <FontAwesomeIcon icon={faHome} />
-            <span></span>
-          </Link>
-        </li>
-        <li className="nav-item">
           <Link to="/register-complaint" className="nav-links">
             Register Complaint
           </Link>
@@ -75,9 +67,6 @@ const Navbar = () => {
           >
             Cyber Awareness
           </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/contact" className="nav-links">Contact</Link>
         </li>
         <li className="nav-item">
           <Link to="/trackComplaint" className="nav-links">Track Complaint</Link> {/* New link for tracking */}

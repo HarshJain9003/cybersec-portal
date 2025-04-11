@@ -22,13 +22,6 @@
   z-index: -1; /* Place the video behind the text */
 }
 
-.hero-text {
-  z-index: 1; /* Ensure text is on top of the video */
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
-  border-radius: 10px;
-}
-
 .hero-text h1 {
   font-size: 3rem;
   margin: 0;
