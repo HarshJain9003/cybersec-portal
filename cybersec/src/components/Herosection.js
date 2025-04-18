@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import './Herosection.css';
-import frontendVideo from '../assets/frontend video.mp4';
+import frontendVideo from '../assets/frontend_video.mp4';
 
 const CyberAwareness = lazy(() => import('./CyberAwareness'));
 const Videos = lazy(() => import('./Videos'));

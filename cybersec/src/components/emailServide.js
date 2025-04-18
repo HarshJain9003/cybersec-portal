@@ -9,13 +9,13 @@ const sendEmail = async (recipientEmail, emailContent) => {
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'your-email@gmail.com',
-      pass: 'your-email-password',
+      user: 'harshjjain9003@gmail.com',
+      pass: 'Harsh@9003',
     },
   });
 
   let mailOptions = {
-    from: 'your-email@gmail.com',
+    from: 'harshjjain9003@gmail.com',
     to: recipientEmail,
     subject: 'Your Incident Report',
     html: emailContent,
